@@ -1,6 +1,6 @@
-#Wenance Challenge
+# Wenance Challenge
 
-###Puesta en marcha
+### Puesta en marcha
 
 para iniciar la app de manera local siga los siguientes pasos (tener instalado docker y git):
  - git clone https://github.com/oliberegm/oliber-garciach.git && cd oliber-garciach
