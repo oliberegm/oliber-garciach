@@ -1,4 +1,4 @@
-# Wenance Challenge
+# Challenge
 
 ### Puesta en marcha
 
