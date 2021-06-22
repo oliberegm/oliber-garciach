@@ -1,14 +1,12 @@
-FROM maven:3.8-openjdk-11  AS MAVEN_TOOL_CHAIN
-RUN git clone https://github.com/oliberegm/oliber-garciach.git /myapp
-RUN mkdir /home/app
-RUN cp -R /myapp/* /home/app
-WORKDIR /home/app
-RUN mvn -B dependency:go-offline -f pom.xml -s /usr/share/maven/ref/settings-docker.xml
-RUN mvn -B -s /usr/share/maven/ref/settings-docker.xml package
-
+#LANZANDO LA APP
 FROM adoptopenjdk/openjdk11:latest
+MAINTAINER Oliber Garcia "oliber.garcia@gmail.com"
+COPY mvnw .
+COPY .mvn .mvn
+COPY pom.xml .
+COPY src src
+RUN ./mvnw install -DskipTests
+ARG JAR_FILE=target/*.jar
+COPY ${JAR_FILE} /usr/local/lib/challen.jar
 EXPOSE 8080
-RUN mkdir /app
-RUN cp target/*.jar /app/app.jar
-WORKDIR /app
-ENTRYPOINT ["java","-jar","/app/app.jar"]
+ENTRYPOINT ["java","-jar","/usr/local/lib/challen.jar"]
