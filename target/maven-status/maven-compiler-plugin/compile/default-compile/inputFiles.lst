@@ -6,6 +6,7 @@
 /Users/oegarcia/proyectos/proy/wenance/src/main/java/com/wenance/challenge/dtos/InstrumentDTO.java
 /Users/oegarcia/proyectos/proy/wenance/src/main/java/com/wenance/challenge/dtos/DTO.java
 /Users/oegarcia/proyectos/proy/wenance/src/main/java/com/wenance/challenge/convert/InstrumentConvert.java
+/Users/oegarcia/proyectos/proy/wenance/src/main/java/com/wenance/challenge/configuration/SwaggerConfig.java
 /Users/oegarcia/proyectos/proy/wenance/src/main/java/com/wenance/challenge/Utils.java
 /Users/oegarcia/proyectos/proy/wenance/src/main/java/com/wenance/challenge/service/LoadDataService.java
 /Users/oegarcia/proyectos/proy/wenance/src/main/java/com/wenance/challenge/configuration/TaskConfig.java

@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: com.wenance.challenge.unit.MarketServiceTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 4.18 s <<< FAILURE! - in com.wenance.challenge.unit.MarketServiceTest
+priceTest  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [springfox.documentation.swagger2.configuration.Swagger2DocumentationConfiguration] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@55054057]
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/servlet/HandlerMapping
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.servlet.HandlerMapping
+
+average  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [springfox.documentation.swagger2.configuration.Swagger2DocumentationConfiguration] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@55054057]
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/servlet/HandlerMapping
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.servlet.HandlerMapping
+
+history  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [springfox.documentation.swagger2.configuration.Swagger2DocumentationConfiguration] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@55054057]
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/servlet/HandlerMapping
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.servlet.HandlerMapping
+
